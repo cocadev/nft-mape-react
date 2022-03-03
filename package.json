@@ -1,0 +1,74 @@
+{
+  "name": "react-template",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "npm-run-all lint:*",
+    "lint-fix": "npm-run-all format lint-fix:*",
+    "format": "prettier --write \"{src,types,scripts}/**/*.{json,{j,t}s{,x},scss,}\"",
+    "lint:ts": "eslint \"{src,types}/**/*.ts{,x}\"",
+    "lint-fix:ts": "eslint \"{src,types}/**/*.ts{,x}\" --fix",
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint-fix:scss": "stylelint \"src/**/*.scss\" --fix",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "axios": "^0.24.0",
+    "bignumber.js": "^9.0.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "gh-pages": "^3.2.3",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.30",
+    "node-sass": "6.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^8.1.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "typescript": "^4.1.2",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.5.4",
+    "remark-preset-lint-recommended": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
