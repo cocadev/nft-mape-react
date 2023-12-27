@@ -1,4 +1,4 @@
-# Mint Mape
+# Mint Mape 2
 
 <img src='2.png' />
 
